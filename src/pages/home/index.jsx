@@ -52,7 +52,7 @@ const HomePage = ({ history, ...props }) => {
   return (
     <div className='HomePage'>
       <NavBar />
-      {/* <div className='hero text-center my-14'>
+      <div className='hero'>
         <h1 className='heading1 max-w-2xl mx-auto text-8xl font-semibold text-dark1 leading-tight'>
           Discover the world of code
         </h1>
@@ -60,8 +60,8 @@ const HomePage = ({ history, ...props }) => {
           Explore open source projects from GitHub, and read their commit
           history to see the story of how they were built.
         </p>
-      </div> */}
-      {/* <div className='form-field-container max-w-5xl mx-auto'>
+      </div>
+      <div className='form-field-container max-w-5xl mx-auto'>
         <form onSubmit={handleSubmit} className='form-container'>
           <div className='input-field'>
             <SearchIcon className='m-2 ml-4' />
@@ -75,7 +75,7 @@ const HomePage = ({ history, ...props }) => {
           </div>
           <Button label='See commits 🚀' />
         </form>
-      </div> */}
+      </div>
       {/* <p className='suggestion text-center my-7 text-gray1 text-base'>
         Or pick one of these suggested repos
       </p>

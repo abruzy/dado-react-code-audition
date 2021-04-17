@@ -14,7 +14,7 @@
     }
 
     .desc {
-      color: var(--gray1);
+      color: #3E4462;
       font-size: 1.5rem;
       line-height: 2rem;
       max-width: 36rem;
@@ -55,5 +55,21 @@
 // responsive for mobile
 
 @media screen and (max-width: 640px) {
-  
+  .HomePage {
+    .hero {
+      margin-top: -1.5rem;
+      margin-bottom: 2rem;
+
+      .heading1 {
+        font-size: 3rem;
+      }
+
+      .desc {
+        font-size: 1rem;
+        max-width: 25rem;
+        padding: 0 1rem;
+        margin-top: 0.85rem;
+      }
+    }
+  }
 }
