@@ -41,7 +41,7 @@
     max-width: 64rem;
     margin: 0 auto;
 
-    .links {
+    .suggested-link {
       padding: 0.5rem 1rem;
       border-radius: 0.5rem;
       font-size: 1rem;
@@ -69,6 +69,24 @@
         max-width: 25rem;
         padding: 0 1rem;
         margin-top: 0.85rem;
+      }
+    }
+
+    .suggestion {
+      max-width: 13rem;
+      margin: 1.75rem auto;
+      line-height: 1.5;
+    }
+
+    .suggested-links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .suggested-link {
+        width: max-content;
+        margin-bottom: 1rem;
       }
     }
   }
