@@ -27,7 +27,7 @@ const SuggestedRepos = [
   }
 ]
 
-const HomePage = ({ history, ...props }) => {
+const HomePage = ({ history }) => {
   const [search, setSearch] = useState('')
 
   const handleSubmit = async e => {
@@ -46,8 +46,6 @@ const HomePage = ({ history, ...props }) => {
       )
     }
   }
-
-  console.log({ props })
 
   return (
     <div className='HomePage'>
