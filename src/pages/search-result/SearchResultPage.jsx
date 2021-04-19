@@ -47,12 +47,13 @@ const SearchResultPage = ({ location, ...props }) => {
     getAllCommitts()
   }, [])
 
-  if (error)
+  if (error) {
     return (
       <h2 style={{ color: 'red', textAlign: 'center', marginTop: '2rem' }}>
         {error}
       </h2>
     )
+  }
 
   return (
     <div className='SearchPage'>
