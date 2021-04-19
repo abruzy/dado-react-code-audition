@@ -48,13 +48,14 @@
       color: white;
       background-color: #29335C;
       margin: 0 0.625rem;
+      cursor: pointer;
     }
   }
 }
 
 // responsive for mobile
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
   .HomePage {
     .hero {
       margin-top: -1.5rem;
