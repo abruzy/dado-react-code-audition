@@ -5,12 +5,12 @@ import axios from 'axios'
 
 import Button from '../../components/buttons/Button'
 import SearchIcon from '../../components/vectors/SearchIcon'
-
-import { formattedDate, validateInput } from '../../utils/index'
+import { validateInput } from '../../validators/input-search-validator'
+import { formatDate } from '../../utils/format-datetime'
 
 import './Search.scss'
 
-const SearchResultPage = ({ location, ...props }) => {
+const SearchResult = ({ location }) => {
   const [searchQuery, setSearchQuery] = useState(location?.state?.search || '')
   const [commits, setCommits] = useState([])
   const [error, setError] = useState('')
@@ -98,9 +98,7 @@ const SearchResultPage = ({ location, ...props }) => {
               <p className='commit-message'>
                 {commit.commit.message.split(')')[0]})
               </p>
-              <p className='date'>
-                {formattedDate(commit.commit.committer.date)}
-              </p>
+              <p className='date'>{formatDate(commit.commit.committer.date)}</p>
             </div>
           ))}
         </div>
@@ -109,4 +107,4 @@ const SearchResultPage = ({ location, ...props }) => {
   )
 }
 
-export default SearchResultPage
+export default SearchResult

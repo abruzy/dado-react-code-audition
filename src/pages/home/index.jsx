@@ -3,8 +3,7 @@ import React, { useState } from 'react'
 import NavBar from '../../components/navbar/NavBar'
 import Button from '../../components/buttons/Button'
 import SearchIcon from '../../components/vectors/SearchIcon'
-
-import { validateInput } from '../../utils/index'
+import { validateInput } from '../../validators/input-search-validator'
 
 import './HomePage.scss'
 
